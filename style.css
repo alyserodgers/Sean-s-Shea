@@ -1,0 +1,23 @@
+body {
+    background-color: #f7f7f7;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: #6b3e26;
+}
+
+h2 {
+    color: #8b5e3c;
+}
+
+p {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-position: inside;
+}
