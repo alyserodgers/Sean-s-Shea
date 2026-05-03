@@ -20,6 +20,9 @@
 <section id="home">
   <h1>Shea Butter & Elixir Oil</h1>
   <p>This is my mom's product line. It helps with dry skin and hair.</p>
+
+  <!-- image added -->
+  <img src="images/shea.jpg" alt="Shea butter product" width="300">
 </section>
 
 <!-- products section -->
@@ -44,7 +47,7 @@
 <section id="contact">
   <h2>Contact / Order</h2>
 
-  <form onsubmit="showMessage()">
+  <form id="myForm">
     <label>Name:</label><br>
     <input type="text" id="name"><br><br>
 
@@ -56,12 +59,24 @@
 
     <button type="submit">Submit</button>
   </form>
+
+  <!-- message area -->
+  <p id="message"></p>
 </section>
 
 <script>
-function showMessage() {
-  alert("Thanks! We will contact you soon.");
-}
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let order = document.getElementById("order").value;
+
+  if (name === "" || email === "" || order === "") {
+    event.preventDefault();
+    document.getElementById("message").textContent = "Please fill out all fields.";
+  } else {
+    document.getElementById("message").textContent = "Thanks! We will contact you soon.";
+  }
+});
 </script>
 
 </body>
