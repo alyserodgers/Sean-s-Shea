@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Mom's Shea Butter Products</title>
+  <meta name="description" content="Shea butter and oil products for skin and hair">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<!-- navigation menu -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- home section -->
+<section id="home">
+  <h1>Shea Butter & Elixir Oil</h1>
+  <p>This is my mom's product line. It helps with dry skin and hair.</p>
+</section>
+
+<!-- products section -->
+<section id="products">
+  <h2>Products</h2>
+  <p>Here are some of the products:</p>
+  <ul>
+    <li>Natural Shea Butter</li>
+    <li>Elixir Oil</li>
+    <li>Hair Growth Oil</li>
+  </ul>
+</section>
+
+<!-- about section -->
+<section id="about">
+  <h2>About</h2>
+  <p>My mom started making these products to help people with natural skin care.
+     She uses simple ingredients and makes everything by hand.</p>
+</section>
+
+<!-- contact section -->
+<section id="contact">
+  <h2>Contact / Order</h2>
+
+  <form onsubmit="showMessage()">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>What do you want to order?</label><br>
+    <textarea id="order"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<script>
+function showMessage() {
+  alert("Thanks! We will contact you soon.");
+}
+</script>
+
+</body>
+</html>
