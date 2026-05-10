@@ -8,76 +8,19 @@
 
 <body>
 
-<!-- navigation menu -->
 <nav>
-  <a href="#home">Home</a>
-  <a href="#products">Products</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
-<!-- home section -->
-<section id="home">
+<section>
   <h1>Shea Butter & Elixir Oil</h1>
   <p>This is my mom's product line. It helps with dry skin and hair.</p>
 
-  <!-- image added -->
   <img src="images/ProductImage.png" alt="Shea butter product" width="300">
 </section>
-
-<!-- products section -->
-<section id="products">
-  <h2>Products</h2>
-  <p>Here are some of the products:</p>
-  <ul>
-    <li>Natural Shea Butter</li>
-    <li>Elixir Oil</li>
-    <li>Hair Growth Oil</li>
-  </ul>
-</section>
-
-<!-- about section -->
-<section id="about">
-  <h2>About</h2>
-  <p>My mom started making these products to help people with natural skin care.
-     She uses simple ingredients and makes everything by hand.</p>
-</section>
-
-<!-- contact section -->
-<section id="contact">
-  <h2>Contact / Order</h2>
-
-  <form id="myForm">
-    <label>Name:</label><br>
-    <input type="text" id="name"><br><br>
-
-    <label>Email:</label><br>
-    <input type="email" id="email"><br><br>
-
-    <label>What do you want to order?</label><br>
-    <textarea id="order"></textarea><br><br>
-
-    <button type="submit">Submit</button>
-  </form>
-
-  <!-- message area -->
-  <p id="message"></p>
-</section>
-
-<script>
-document.getElementById("myForm").addEventListener("submit", function(event) {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let order = document.getElementById("order").value;
-
-  if (name === "" || email === "" || order === "") {
-    event.preventDefault();
-    document.getElementById("message").textContent = "Please fill out all fields.";
-  } else {
-    document.getElementById("message").textContent = "Thanks! We will contact you soon.";
-  }
-});
-</script>
 
 </body>
 </html>
